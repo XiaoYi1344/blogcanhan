@@ -1,0 +1,105 @@
+/* Custom Color Scheme */
+.custom-navbar {
+    background-color: #C87377;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #FEE3E5;
+  }
+  
+  .btn-custom {
+    background-color: #FDD4D7;
+    color: #C87377;
+    border-radius: 50px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: #C87377;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  h1 {
+    color: #C87377;
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+  }
+  
+  /* Posts List */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-item {
+    background-color: #FEE3E5;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .post-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    color: #D38F8F;
+    font-size: 1.5rem;
+  }
+  
+  button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Status labels */
+  .approved, .pending {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+  
+  .approved {
+    background-color: #D38F8F;
+    color: white;
+  }
+  
+  .pending {
+    background-color: #C87377;
+    color: white;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: #FF6B6B;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  

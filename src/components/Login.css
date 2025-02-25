@@ -1,0 +1,97 @@
+/* General Reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the login form with background image */
+  .login-container {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://example.com/your-artistic-image.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: blur(0px); /* Optional: add blur to background */
+  }
+  
+  /* Apply mirror effect using transform */
+  .login-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    transform: scaleY(-1); /* This is where the mirror effect happens */
+    filter: blur(20px); /* Optional: to enhance the reflection */
+    z-index: -1; /* Make sure the background stays behind the content */
+  }
+  
+  /* Style the form container */
+  .form-container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Header styles */
+  .form-container h2 {
+    margin-bottom: 20px;
+    color: #C87377; /* Primary color */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Input styles */
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #D38F8F; /* Lighter secondary color for input borders */
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Button styles */
+  .form-container button {
+    padding: 10px 20px;
+    background-color: #C87377; /* Primary color for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for buttons */
+  .form-container button:hover {
+    background-color: #D38F8F; /* Lighter hover effect color */
+  }
+  
+  /* Error message styling */
+  .form-container p {
+    margin-top: 10px;
+    color: red;
+  }
+  
+  /* Button to go to register page */
+  .form-container button:last-of-type {
+    margin-top: 15px;
+    background-color: #FDD4D7 !important; /* Soft background color */
+    color: #C87377; /* Text color to match primary color */
+  }
+  
+  .form-container button:last-of-type:hover {
+    background-color: #FEE3E5; /* Lightest hover color */
+    color: #D38F8F; /* Slightly darker text color */
+  }
+  

@@ -1,0 +1,104 @@
+/* Custom Color Scheme with Bouncy Elements */
+.custom-navbar {
+  background-color: #C87377 !important;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden; 
+}
+
+@keyframes bubbleBounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); } /* Slightly increase the size */
+  100% { transform: scale(1); }
+}
+
+.table-hover tbody tr:hover {
+  background-color: #FEE3E5;
+  transition: background-color 0.3s ease;
+  animation: bubblePop 0.3s ease-out; /* Add bounce effect on hover */
+}
+
+@keyframes bubblePop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 15px;
+}
+
+.table-light {
+  background-color: #D38F8F !important;
+  border-radius: 8px;
+}
+
+.table-bordered {
+  border: 1px solid #FDD4D7 !important;
+  border-radius: 8px;
+}
+
+/* Bouncy Button Styles */
+.btn-info, .btn-warning, .btn-danger {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 50px; /* Rounded, bubble-like button shape */
+  padding: 12px 24px; /* Slightly larger padding for the "bubble" effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.btn-info:hover, .btn-info:focus {
+  background-color: #FDD4D7 !important;
+  transform: scale(1.1); /* Bouncy effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-warning:hover, .btn-warning:focus {
+  background-color: #FEE3E5 !important;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-danger:hover, .btn-danger:focus {
+  background-color: #C87377 !important;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-info, .btn-warning, .btn-danger {
+  background-color: #C87377 !important;
+  color: #fff;
+}
+
+/* Extra Styling for Form Elements */
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+  border-radius: 12px; /* Rounded, bubble-like fields */
+  padding: 12px 16px;
+  border: 2px solid #FDD4D7;
+  background-color: #FEE3E5;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus, textarea:focus {
+  background-color: #fff;
+  border-color: #C87377;
+  transform: scale(1.05); /* Slightly growing effect when focused */
+}
+
+/* Bubble-like Effect for Containers */
+.bubble-container {
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #FEE3E5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  animation: bubblePop 1s ease-in-out infinite; /* Adding a soft popping effect */
+}
+
+@keyframes bubblePop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

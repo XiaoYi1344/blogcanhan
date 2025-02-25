@@ -1,0 +1,71 @@
+/* Thanh Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-register {
+    background-color: #e74c3c;
+}
+
+.btn-register:hover {
+    background-color: #c0392b;
+}
+
+/* Nội dung trang */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Danh sách bài viết */
+.post-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-item {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.author {
+    font-style: italic;
+    color: #555;
+}

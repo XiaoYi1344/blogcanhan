@@ -1,0 +1,167 @@
+/* Tổng background và giao diện trang */
+.custom-bg {
+    background-color: #FEE3E5; /* Màu nền chính */
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in; /* Thêm hiệu ứng fade-in */
+}
+
+/* Navbar */
+.custom-navbar {
+    background: linear-gradient(135deg, #C87377, #D38F8F); /* Gradient cho navbar */
+    border-radius: 0 0 40% 40%;
+}
+
+/* Navbar brand */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FEE3E5;
+    font-family: 'Cursive', sans-serif;
+}
+
+/* Các link trong navbar */
+.navbar-nav .nav-link {
+    color: #FDD4D7 !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hiệu ứng hover và focus cho nav-link */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #C87377 !important;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px #FEE3E5, 0 0 10px #FEE3E5;
+}
+
+/* Navbar toggler icon */
+.navbar-toggler-icon {
+    background-color: transparent !important;
+    border: 1px solid #FEE3E5;
+    border-radius: 5px;
+}
+
+/* Button custom */
+.btn-custom {
+    background-color: #C87377;
+    color: #FEE3E5;
+    border: none;
+    font-weight: 600;
+    padding: 15px 30px;
+    font-size: 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Hover và Focus hiệu ứng cho Button */
+.btn-custom:hover {
+    background-color: #D38F8F !important;
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+.btn-custom:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FEE3E5, 0 0 10px #FEE3E5;
+}
+
+/* Để nút chính giữa trong container */
+.container-btn-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Các đường lượn sóng */
+.custom-bg::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #FEE3E5;
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+}
+
+/* Phần chữ */
+.text-light {
+    color: #FDD4D7 !important;
+}
+
+/* Định dạng cho các container chính */
+.container {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Đặt nút Đăng xuất ở giữa */
+.logout-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logout-btn-container .btn-custom {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Phản hồi với màn hình di động */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .btn-custom {
+        padding: 10px;
+    }
+}
+
+/* Parallax effect */
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
